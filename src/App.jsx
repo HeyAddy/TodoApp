@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import img from "./images/todo.svg";
 
 export const App = () => {
   const [inputData, SetinputData] = useState();
@@ -65,10 +66,7 @@ export const App = () => {
       <div className="main-div">
         <div className="child-div">
           <figure>
-            <img
-              src={process.env.PUBLIC_URL + "images/todo.svg"}
-              alt="todologo"
-            />
+            <img src={img} alt="todologo" />
             <figcaption>Add Your List Here 👌</figcaption>
           </figure>
           <div className="addItems">
